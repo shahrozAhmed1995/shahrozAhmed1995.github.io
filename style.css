@@ -32,6 +32,24 @@
 
     }
 }
+.right
+{
+    margin-left: auto;
+}
+.contaner{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50;/*view port height*/
+}
+
+.sticky
+{
+    position:fixed;
+    top:0;
+    width: 100%; 
+}
 li
 {
     padding:20px;
@@ -57,4 +75,29 @@ body{
     }
 
 .blue{
-    background: #7abcff;     }
+    background: #7abcff; 
+ }
+
+/*potefolio*/
+
+.grid-wrapper
+{
+   
+  display: grid;
+  grid-template-columns: 
+
+   repeat(auto-fill, minmax(300px,1fr));
+       
+     grid-row-gap:20px;
+}
+.box
+{
+    background-color:#555;
+    padding: 50px;
+    margin:20px;
+}
+.box >img
+{
+    width: 100%;
+    /*height: 100%;*/
+}
